@@ -133,7 +133,7 @@ class RoomBerry(object):
     self.__text=self.__font.render('This is some test text',True,(255,255,255))
     self.__screen.blit(self.__text,(10,10))
     # Attempt to get calendar entry
-    self.__appointment=self.__roomFolder.get_event(#NEEED EVENT ID#)
+    #self.__appointment=self.__roomFolder.get_event(#NEEED EVENT ID#)
     pg.display.flip()
     pg.event.pump()
     pg.display.flip()
