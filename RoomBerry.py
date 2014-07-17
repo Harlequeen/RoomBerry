@@ -19,7 +19,7 @@ import pygame as pg
 import pygame.font as pgfont
 # Import pyexchange to connect to Exchange
 import pyexchange
-from pyexchange import Exchange2010Service, ExchangeNTLMAuthConnection, Exchange2010FolderService
+from pyexchange import Exchange2010Service, ExchangeNTLMAuthConnection
 os.environ['SDL_VIDEODRIVER']="fbcon"
 CAPTION = "RoomBerry Pi"
 SCREEN_SIZE = (320, 240)
@@ -134,7 +134,7 @@ class RoomBerry(object):
     self.__screen.blit(self.__text,(10,10))
     # Attempt to get calendar entry
     #self.__appointment=self.__roomFolder.get_event(#NEEED EVENT ID#)
-    self__appointments=search_appointments(self__roomFolder,"AgAA",date("17 July 2014"))
+    self__appointments=self__roomFolder.search_appointments("AgAA",date("17 July 2014"))
     pg.display.flip()
     pg.event.pump()
     pg.display.flip()
