@@ -19,7 +19,7 @@ import pygame as pg
 import pygame.font as pgfont
 # Import pyexchange to connect to Exchange
 import pyexchange
-from pyexchange import Exchange2010Service, ExchangeNTLMAuthConnection
+from pyexchange import Exchange2010Service, ExchangeNTLMAuthConnection, Exchange2010FolderService
 os.environ['SDL_VIDEODRIVER']="fbcon"
 CAPTION = "RoomBerry Pi"
 SCREEN_SIZE = (320, 240)
